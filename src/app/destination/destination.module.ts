@@ -7,6 +7,8 @@ import { DestinationResolver } from './destination.resolver';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { ApiModule } from '../api';
+import { ActivityService } from '../activity/activity.service';
+import { ActivityComponent } from '../activity/activity.component';
 
 @NgModule({
 	imports: [
@@ -18,14 +20,17 @@ import { ApiModule } from '../api';
 	providers: [
 		DestinationService,
 		DestinationResolver,
+		ActivityService,
 	],
 	declarations: [
 		DestinationComponent,
 		DestinationThumbnailComponent,
 		DestinationGalleryComponent,
+		ActivityComponent,
 	],
 	exports: [
 		DestinationThumbnailComponent,
+		ActivityComponent,
 	]
 })
 export class DestinationModule {}

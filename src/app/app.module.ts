@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.router';
+//import { ActivityComponent } from './activity/activity.component';
 
 @NgModule({
 	imports: [
@@ -13,8 +14,9 @@ import { AppRoutingModule } from './app.router';
 	],
 	declarations: [
 		AppComponent,
+		//ActivityComponent,
 	],
-	bootstrap: [
+	bootstrap: [//point d'entrée
 		AppComponent,
 	],
 })

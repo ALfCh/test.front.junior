@@ -34,6 +34,13 @@
 						</div>
 						<app-destination-gallery [destination]="destination"></app-destination-gallery>
 					</section>
+					
+						<section class="grid-md4 grid-lg3 activity-section">
+							<div class="activity.info" *ngFor="let activity of activities">
+								<app-activity-component [activity]="activity"></app-activity-component>
+							</div>
+						</section>
+					
 		</div>
 	</div>
 </main>
