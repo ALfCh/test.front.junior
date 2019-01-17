@@ -30,7 +30,6 @@ import { ActivityComponent } from '../activity/activity.component';
 	],
 	exports: [
 		DestinationThumbnailComponent,
-		ActivityComponent,
 	]
 })
 export class DestinationModule {}
